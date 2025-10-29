@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="index.html"><h1>Pokédex</h1></a>
+    <div class="botoes-controle">
+      <button id="anterior">◀ Anterior</button>
+      <button id="favoritos">⭐ Favoritos</button>
+      <button id="proximo">Próxima ▶</button>
+      
+      
+      
+    </div>
+    <input type="text" id="campo-busca" placeholder="Buscar Pokémon pelo nome..." />
+    <div id="mensagem"></div>
+    <div id="lista-pokemons" class="grid"></div>
+  </div>
+ 
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <span id="fechar-modal" class="fechar">&times;</span>
+      <img id="imagem-detalhe" alt="Imagem do Pokémon" />
+      <h2 id="nome-detalhe"></h2>
+      <p><strong>ID:</strong> <span id="id-detalhe"></span></p>
+      <p><strong>Tipo(s):</strong> <span id="tipo-detalhe"></span></p>
+      <p><strong>Altura:</strong> <span id="altura-detalhe"></span></p>
+      <p><strong>Peso:</strong> <span id="peso-detalhe"></span></p>
+      <button id="favoritar-detalhe">⭐ Favoritar</button>
+    </div>
+  </div>
+
+  <footer>
+    
+    
+    <div class="rodape-info">
+      <p><strong>Dayvid Santos</strong> — © 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
